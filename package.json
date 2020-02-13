@@ -1,0 +1,24 @@
+{
+  "name": "simon-says",
+  "version": "1.0.0",
+  "description": "Juego \"Simón Dice\" como proyecto para el curso de r/argentinaprograma",
+  "main": "simon-says.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AChareun/simon-says.git"
+  },
+  "author": "Alonso Chareun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AChareun/simon-says/issues"
+  },
+  "homepage": "https://github.com/AChareun/simon-says#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
+  }
+}
