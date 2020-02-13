@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Simon Says</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+
+    <div id="inicio">
+    <div class="container alert alert-dark border-secondary" role="alert">
+        <div class="col-sm d-flex justify-content-center">
+            <h1 class="display-3">Simón Dice</h1>
+        </div>
+        <div class="col-sm d-flex justify-content-center">
+            <h3 class="display-4">Selecciona una dificultad</h3>
+        </div>
+    </div>
+    <div class="container">
+        <button type="button" class="btn btn-success btn-lg btn-block border-secondary" id="facil">Fácil</button>
+        <button type="button" class="btn btn-danger btn-lg btn-block border-secondary" id="dificil">Difícil</button>
+    </div>
+    </div>
+
+    <div id="juego" class="d-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8" role="alert">
+                <div class="alert alert-primary border-secondary" id="estado">Simón Dice! Pulsa Iniciar para jugar.</div>
+            </div>
+            <div class="col-sm alert alert-primary border-secondary ml-0 mr-3">
+                <p>Ronda # <strong id="ronda">0</strong></p>
+            </div>
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary" id="iniciar">Iniciar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="tablero">
+        <div class="row">
+            <div class="col-sm">
+                <div id="cuadro-1" class="cuadro"></div>
+            </div>
+            <div class="col-sm">
+                <div id="cuadro-2" class="cuadro"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div id="cuadro-3" class="cuadro"></div>
+            </div>
+            <div class="col-sm">
+                <div id="cuadro-4" class="cuadro"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="container fixed-bottom justify-content-left mx-0">
+        <button type="button" class="btn border-secondary" id="toggle-mode">Dark Mode</button>
+    </footer>
+
+    <script src="simon-says.js"></script>
+</body>
+</html>
