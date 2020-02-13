@@ -157,3 +157,39 @@ function perder() {
   cambiarEstado("Perdiste! Presiona Reiniciar Juego para volver a intentarlo", true)
 }
 
+//Light and Dark Mode
+
+const $TOGGLE_MODE = document.querySelector("#toggle-mode");
+
+$TOGGLE_MODE.onclick = toggleMode;
+
+function lightMode() {
+    document.querySelector("body").style.backgroundColor = "whitesmoke";
+    $TOGGLE_MODE.innerText = "Dark Mode"
+    $TOGGLE_MODE.classList.remove("btn-light");
+    $TOGGLE_MODE.classList.add("btn-dark");
+
+    return false;
+}
+
+function darkMode() {
+    document.querySelector("body").style.backgroundColor = "black";
+    $TOGGLE_MODE.innerText = "Light Mode";
+    $TOGGLE_MODE.classList.remove("btn-dark");
+    $TOGGLE_MODE.classList.add("btn-light");
+    
+    return true;
+}
+
+function toggleMode() {
+    if (mode === false) {
+        darkMode();
+        mode = true;
+    }else {
+        lightMode();
+        mode = false;
+    }
+    
+}
+
+let mode = lightMode();
