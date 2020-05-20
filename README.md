@@ -1,15 +1,33 @@
-# simon-says
+# Simon Says
+
+Project for the course of r/argentinaprograma.
+
+Basic game logic was done following the course. Some extra functionality was added later (like a simple toggle for dark bg and easy/hard mode).
+
+[Demo](https://achareun.github.io/simon-says/)
+
+# To Install
+
+`npm install`
+
+# To Do
+
+- [ ] Improve the styling.
+- [ ] Add tests.
+
+# Simón Dice
 
 Juego "simón dice" como proyecto para el curso r/argentinaprograma
 
--La estructura básica del juego fue creada siguiendo lineamientos del curso.
--Posteriormente fueron añadidas otras funcionalidades como elecciones de dificultad y modo oscuro. 
--Con el tiempo la idea es ir mejorando las funcionalidades.
+La lógica básica del juego fue creada siguiendo lineamientos del curso. Posteriormente fueron añadidas otras funcionalidades como elección de dificultad y un rudimentario dark mode.
+ 
+[Demo](https://achareun.github.io/simon-says/)
 
-# dependencias
+# Instalación
 
-Este proyecto depende de bootstrap, el cual, a su vez, depende opcionalmente de jquery y popper.js. Todos fueron incluidos
+`npm install`
 
-# instalación
+# Por Hacer
 
-Correr "npm install"
+- [ ] Mejorar los estilos.
+- [ ] Añadir tests.
